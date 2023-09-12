@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NavBar from "./Components/NavBar/NavBar"
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import "bulma/css/bulma.css";
+function App(){
+    return (
+        //<div className="container">
+          //  <div className="columns is-centered"> //className="column is-half has-text-centered"
+                <div> 
+                    <NavBar/>
+                    <ItemListContainer  greeting={'Bienvenidos'}/>
+                    
+                </div> 
+    )
 }
 
 export default App;
