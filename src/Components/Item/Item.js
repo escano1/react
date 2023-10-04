@@ -3,7 +3,9 @@ import { Link } from "react-router-dom"
 const Item = ({id,name,img, price, stock}) => {
 
     return (
-      <div className="columns is-centered">
+      
+
+    <div className="columns is-centered">
       <div className="column is-one-quarter">
         <article className="box has-text-centered is-rounded">
           <header>
